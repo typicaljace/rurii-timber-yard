@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Rurii Timber Yard & Furniture</title>
+</head>
+<body>
+    <header>
+
+        <h1>Rurii Timber Yard & Furniture</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+        <div class="slider-container" id="home">
+            <div class="slider" id="slider">
+                <div class="slide" style="background-image: url('components/bed1.4.jpeg')"></div>
+                
+            </div>
+            <div class="slider-buttons">
+                <button onclick="prevSlide()">&#10094;</button>
+                <button onclick="nextSlide()">&#10095;</button>
+            </div>
+        <div class="hero-content">
+            <h2>Welcome to Our Timber Yard & Furniture Store</h2>
+            <p>High-quality timber and handcrafted furniture for all your needs.</p>
+            <a href="#products" class="cta-button">View Products</a>
+        </div>
+    </div>
+    <script>
+        const images = ['components/bed1.4.jpeg', 'components/bed1.3.jpeg', 'components/bed1.2.jpeg'];
+        let currentIndex = 0;
+        const slider = document.getElementById('slider');
+
+        function showSlide(index) {
+            if (index < 0) {
+                currentIndex = images.length - 1;
+            } else if (index >= images.length) {
+                currentIndex = 0;
+            } else {
+                currentIndex = index;
+            }
+            slider.style.backgroundImage = `url(${images[currentIndex]})`;
+        }
+
+        function nextSlide() {
+            showSlide(currentIndex + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentIndex - 1);
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            showSlide(currentIndex);
+            setTimeout(() => {
+                let hero = document.getElementById("hero-content");
+                hero.style.opacity = "1";
+                hero.style.transform = "translate(-50%, -50%)";
+            }, 500);
+        });
+    </script>
+    <div class="container" id="products">
+        <h2>Our Products</h2>
+        <div class="product">
+            <img src="components/bed4.jpeg" alt="" height="180px" width="300px">
+            <h3>Beds</h3>
+            <p>Beautifully crafted and spacious <br>beds.</p>
+            
+        </div>
+        <div class="product">
+            <img src="components/sofa3.jpg" alt="" height="180px" width="300px">
+            <h3>Sofa</h3>
+            <p>Premium sofa's equipped with high <br>density and comfortable materials.</p>
+            
+        </div>
+        <div class="product">
+            <img src="components/tvcab1.jpeg" alt="" height="180px" width="300px" >
+            <h3>Tv cabinets</h3>
+            <p>Well designed and beautifully made tv cabinets.</p>
+            
+        </div>
+        <div class="product">
+            <img src="components/babybed1.jpg" alt="" height="180px" width="300px" >
+            <h3>Babybeds</h3>
+            <p>Small beautifull babybeds designed for<br> both safety and comfort for young ones.</p>
+            
+        </div>
+        <div class="product">
+            <img src="components/tvcab1.jpeg" alt="" height="180px" width="300px" >
+            <h3>Solid Wood Table</h3>
+            <p>Beautifully crafted solid wood dining <br>table.</p>
+            
+        </div>        
+        <div class="product">
+            <img src="components/shoerack1.jpg" alt="" height="180px" width="300px" >
+            <h3>Shoeracks</h3>
+            <p>Well layerd and spacious shoeracks.</p>
+            
+        </div>
+    </div>
+<section>
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        Contact us for arrangements, customisations and payment methods.
+        <p>Email: info@timberyard.com</p>
+        <p>Phone: +123 456 7890</p>
+        <div class="whatsapp-icon">
+            <a href="tel:+254 776566550">whatsapp
+                <img src="whatsapp-icon.png" alt="WhatsApp Chat">
+            </a>
+        </div>
+    </div>
+    <div>
+        .
+    </div>
+</section>
+    <footer>
+        <p>&copy; 2025 Timber Yard & Furniture. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
