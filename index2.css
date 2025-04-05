@@ -96,6 +96,25 @@ nav a:hover {
     color: white;
     z-index: 2;
 }
+.leFadeInBottom span {
+    display: inline-block;
+    animation-name: leFadeInBottom;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+
+@keyframes leFadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .hero-content h2 {
     font-size: 2.5em;
     margin-bottom: 10px;
@@ -117,9 +136,29 @@ nav a:hover {
 .cta-button:hover {
     background: #e6c300;
 }
+.seemore-btn {
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #FFD700;
+    height: 36px;
+    width: 100px;
+    font-weight: bold;
+    margin: 1px;
+}
+.seemore-btn:hover{
+    background-color: #857a3b;
+    transform: scale(1.2);
+    color: white;
+    margin: 1px;
+}
 .container {
     padding: 20px;
     text-align: center;
+    margin: 15px;
+    padding: 10px;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 20px rgba(7, 7, 7, 0.3);
+    border-radius: 5px;
 }
 .product {
     display: inline-block;
@@ -127,7 +166,7 @@ nav a:hover {
     padding: 10px;
     background-color: whitesmoke;
     box-shadow: 5px 5px 20px rgba(7, 7, 7, 0.3);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .product img {
     border-radius: 10px;
@@ -136,6 +175,13 @@ nav a:hover {
 .product img:hover {
     scale: 1.2;
     transition: transform 0.3s;
+}
+.contact {
+    margin: 15px;
+    padding: 10px;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 20px rgba(7, 7, 7, 0.3);
+    border-radius: 5px;
 }
 .whatsapp-icon {
     display: inline-block;

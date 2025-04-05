@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wand</title>
+    <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🪄</text></svg>" type="image/svg+xml">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0a0a0a;
+            color: #f1f1f1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+            user-select: none;
+        }
+        
+        .container {
+            text-align: center;
+            z-index: 2;
+            padding: 2rem;
+            max-width: 800px;
+            position: relative;
+        }
+
+        .content-glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse, rgba(156, 39, 176, 0.25) 0%, rgba(10, 10, 10, 0) 70%);
+            z-index: -1;
+            filter: blur(15px);
+        }
+        
+        .logo {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+            animation: float 6s ease-in-out infinite;
+            position: relative;
+            opacity: 0.9;
+            filter: brightness(0.8);
+            text-shadow: 0 0 15px rgba(156, 39, 176, 0.7);
+        }
+        
+        .logo::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: rgba(156, 39, 176, 0.5);
+            border-radius: 50%;
+            bottom: 20px;
+            right: -10px;
+            box-shadow: 0 0 20px 5px rgba(156, 39, 176, 0.3);
+            animation: pulse 4s infinite;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #bbbbbb;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .tagline {
+            border-right: 2px solid #9c27b0;
+            white-space: nowrap;
+            overflow: hidden;
+            margin: 0 auto;
+            letter-spacing: 0.15rem;
+            animation: typing 2s steps(30, end), blink-caret 0.75s step-end infinite;
+        }
+        
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+        
+        .particle {
+            position: absolute;
+            background-color: rgba(156, 39, 176, 0.2);
+            border-radius: 50%;
+            animation: rise linear infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) rotate(2deg);
+            }
+            50% {
+                transform: translateY(-10px) rotate(-2deg);
+            }
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(0.8);
+                opacity: 0.7;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(0.8);
+                opacity: 0.7;
+            }
+        }
+        
+        @keyframes rise {
+            0% {
+                transform: translateY(100vh) scale(0);
+                opacity: 0;
+            }
+            50% {
+                opacity: 0.5;
+            }
+            100% {
+                transform: translateY(-100px) scale(1);
+                opacity: 0;
+            }
+        }
+        
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #9c27b0 }
+        }
+        
+        .glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(156, 39, 176, 0.1) 0%, rgba(10, 10, 10, 0) 70%);
+            z-index: 0;
+            pointer-events: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+            
+            .logo {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="glow"></div>
+    <div class="particles" id="particles"></div>
+    <div class="container">
+        <div class="content-glow"></div>
+        <div class="logo">✨🪄</div>
+        <p class="tagline">Casting a new reality</p>
+        <p>A new power is emerging.</p>
+    </div>
+
+    <script>
+        const particlesContainer = document.getElementById('particles');
+        const particleCount = 50;
+        
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+            
+            const size = Math.random() * 15 + 5;
+            particle.style.width = size + 'px';
+            particle.style.height = size + 'px';
+            
+            const xPos = Math.random() * 100;
+            const yPos = Math.random() * 100;
+            particle.style.left = xPos + '%';
+            particle.style.top = yPos + '%';
+            
+            const duration = Math.random() * 10 + 10;
+            particle.style.animationDuration = duration + 's';
+            
+            const delay = Math.random() * 10;
+            particle.style.animationDelay = delay + 's';
+            
+            const opacity = Math.random() * 0.5 + 0.3;
+            particle.style.opacity = opacity;
+            
+            particlesContainer.appendChild(particle);
+        }
+        
+        document.addEventListener('mousemove', function(e) {
+            const trail = document.createElement('div');
+            trail.classList.add('particle');
+            trail.style.width = '8px';
+            trail.style.height = '8px';
+            trail.style.left = e.pageX + 'px';
+            trail.style.top = e.pageY + 'px';
+            trail.style.animation = 'none';
+            trail.style.opacity = '0.7';
+            
+            particlesContainer.appendChild(trail);
+            
+            setTimeout(() => {
+                trail.style.opacity = '0';
+                trail.style.transform = 'scale(2)';
+                trail.style.transition = 'all 0.5s ease';
+                
+                setTimeout(() => {
+                    particlesContainer.removeChild(trail);
+                }, 500);
+            }, 10);
+        });
+    </script>
+</body>
+</html>

@@ -27,9 +27,12 @@
                 <button onclick="nextSlide()">&#10095;</button>
             </div>
         <div class="hero-content">
-            <h2>Welcome to Our Timber Yard & Furniture Store</h2>
-            <p>High-quality timber and handcrafted furniture for all your needs.</p>
-            <a href="#products" class="cta-button">View Products</a>
+            <div class="cssanimation leFadeInBottom sequence">
+            <h2 class="leFadeInBottom"><span>Welcome to Our Timber Yard & Furniture Store</span></h2>
+            <p class="leFadeInBottom"><span>High-quality timber and handcrafted furniture for all your needs.</span></p>
+            <script type="text/javascript" src="cssanimation-gsap.js"></script>
+            <p class="leFadeInBottom"><span><a href="#products" class="cta-button">View Products</a></span></p>
+            </div>
         </div>
     </div>
     <script>
@@ -63,6 +66,12 @@
                 hero.style.opacity = "1";
                 hero.style.transform = "translate(-50%, -50%)";
             }, 500);
+            document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(() => {
+            document.querySelector(".leFadeInBottom span").style.opacity = "1";
+             }, 500);
+            });
+
         });
     </script>
     <div class="container" id="products">
@@ -71,38 +80,39 @@
             <img src="components/bed4.jpeg" alt="" height="180px" width="300px">
             <h3>Beds</h3>
             <p>Beautifully crafted and spacious <br>beds.</p>
+            <button class="seemore-btn">see more</button>
             
         </div>
         <div class="product">
             <img src="components/sofa3.jpg" alt="" height="180px" width="300px">
             <h3>Sofa</h3>
             <p>Premium sofa's equipped with high <br>density and comfortable materials.</p>
-            
+            <button class="seemore-btn">see more</button>
         </div>
         <div class="product">
             <img src="components/tvcab1.jpeg" alt="" height="180px" width="300px" >
             <h3>Tv cabinets</h3>
-            <p>Well designed and beautifully made tv cabinets.</p>
-            
+            <p>Well designed and beautifully made tv <br>cabinets.</p>
+            <button class="seemore-btn">see more</button>
+        </div>
+        <div class="product">
+            <img src="components/shoerack1.jpg" alt="" height="180px" width="300px" >
+            <h3>Shoeracks</h3>
+            <p>Well layered spaced and designed<br> shoeracks.</p>
+            <button class="seemore-btn">see more</button>
         </div>
         <div class="product">
             <img src="components/babybed1.jpg" alt="" height="180px" width="300px" >
             <h3>Babybeds</h3>
             <p>Small beautifull babybeds designed for<br> both safety and comfort for young ones.</p>
-            
+            <button class="seemore-btn">see more</button>
         </div>
         <div class="product">
-            <img src="components/tvcab1.jpeg" alt="" height="180px" width="300px" >
-            <h3>Solid Wood Table</h3>
-            <p>Beautifully crafted solid wood dining <br>table.</p>
-            
-        </div>        
-        <div class="product">
-            <img src="components/shoerack1.jpg" alt="" height="180px" width="300px" >
-            <h3>Shoeracks</h3>
-            <p>Well layerd and spacious shoeracks.</p>
-            
-        </div>
+            <img src="components/shelves.jpeg" alt="" height="180px" width="300px" >
+            <h3>shelves</h3>
+            <p>Beautifully designed, colored and crafted<br> shelves table.</p>
+            <button class="seemore-btn">see more</button>
+        </div>  
     </div>
 <section>
     <div class="container" id="contact">
