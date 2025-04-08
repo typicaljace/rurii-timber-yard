@@ -146,7 +146,7 @@ nav a:hover {
     margin: 1px;
 }
 .seemore-btn:hover{
-    background-color: #857a3b;
+    background-color: #8B4513;
     transform: scale(1.2);
     color: white;
     margin: 1px;
@@ -182,6 +182,19 @@ nav a:hover {
     background-color: whitesmoke;
     box-shadow: 5px 5px 20px rgba(7, 7, 7, 0.3);
     border-radius: 5px;
+}
+.service {
+    display: inline-block;
+    width: 45%;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 20px rgba(7, 7, 7, 0.3);
+}
+.foot {
+    background-color:#8B4513;
+    height: 80px;
 }
 .whatsapp-icon {
     display: inline-block;
