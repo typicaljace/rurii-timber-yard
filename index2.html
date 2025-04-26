@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index2.css">
+    <link rel="website icon" href="🪵">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Rurii Timber Yard & Furniture</title>
 </head>
 <body>
     <header>
-
-        <h1>Rurii Timber Yard & Furniture</h1>
+       <h1>Rurii Timber Yard & Furniture</h1>
     </header>
-    <nav>
-        <a href="#home">Home</a>
+    <nav class="nav-links" id="navLinks">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
         <a href="#products">Products</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
-    </nav>
+      </nav>
         <div class="slider-container" id="home">
             <div class="slider" id="slider">
                 <div class="slide" style="background-image: url('assets/bed1.4.jpeg')"></div>
@@ -29,10 +30,9 @@
             </div>
         <div class="hero-content">
             <div class="cssanimation leFadeInBottom sequence">
-            <h2 class="leFadeInBottom"><span>Welcome to Our Timber Yard & Furniture Store</span></h2>
+            <h2 class="leFadeInBottom"><span>Crafting Quality Timber & Furniture</span></h2>
             <p class="leFadeInBottom"><span>High-quality timber and handcrafted furniture for all your needs.</span></p>
             <script type="text/javascript" src="cssanimation-gsap.js"></script>
-            <p class="leFadeInBottom"><span><a href="#products" class="cta-button">View Products</a></span></p>
             </div>
         </div>
     </div>
@@ -75,68 +75,108 @@
 
         });
     </script>
-    <div class="container" id="products">
-        <h2>Our Products</h2>
-        <div class="product">
-            <img src="assets/bed4.jpeg" alt="" height="180px" width="300px">
-            <h3>Beds</h3>
-            <p>Beautifully crafted and spacious <br>beds.</p>
-            <button class="seemore-btn">see more</button>
-            
+    <div class="about" id="about">
+        <h2>About Us</h2>
+    <section class="about-us">
+        <div class="about-text">
+        <p>
+          Welcome to our timber yard and furniture store — where craftsmanship meets quality. 
+          We specialize in premium timber, custom furniture, and reliable woodworking services designed 
+          to meet the needs of builders, DIYers, and home improvement lovers alike.
+        </p>
+        <p>
+          With years of hands-on experience, we take pride in providing expertly cut timber, unique handcrafted pieces, 
+          and a range of services including timber splitting, sawdust supply, and furniture refinishing.
+        </p>
+        <p>
+          Whether you're looking for raw materials or ready-to-use furniture, our team is here to help you bring your vision to life.
+        </p>
         </div>
-        <div class="product">
-            <img src="assets" alt="" height="180px" width="300px">
-            <h3>Sofa's</h3>
-            <p>Premium sofa's equipped with high <br>density and comfortable materials.</p>
-            <button class="seemore-btn">see more</button>
+        <div class="about-image">
+            <img src="assets/bed1.jpeg" alt="About Us Image">
         </div>
-        <div class="product">
-            <img src="assets/tvcab1.jpeg" alt="" height="180px" width="300px" >
-            <h3>Tv cabinets</h3>
-            <p>Well designed and beautifully made tv <br>cabinets.</p>
-            <button class="seemore-btn">see more</button>
-        </div>
-        <div class="product">
-            <img src="assets/shoerack1.jpg" alt="" height="180px" width="300px" >
-            <h3>Shoeracks</h3>
-            <p>Well layered spaced and designed<br> shoeracks.</p>
-            <button class="seemore-btn">see more</button>
-        </div>
-        <div class="product">
-            <img src="assets/babybed1.jpg" alt="" height="180px" width="300px" >
-            <h3>Babybeds</h3>
-            <p>Small beautifull babybeds designed for<br> both safety and comfort for young ones.</p>
-            <button class="seemore-btn">see more</button>
-        </div>
-        <div class="product">
-            <img src="assets/shelves.jpeg" alt="" height="180px" width="300px" >
-            <h3>shelves</h3>
-            <p>Beautifully designed, colored and crafted<br> shelves table.</p>
-            <button class="seemore-btn">see more</button>
-        </div>  
+        </section>
+        <section class="products" id="products">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+              <!-- Row 1 -->
+              <div class="product-item">
+                <img src="assets/bed4.jpeg" alt="Custom Bed" height="180px" width="300px"/>
+                <h3>Custom Bed</h3>
+                <p>
+                  Handcrafted for comfort and style, our custom beds are built to fit any bedroom. Choose from a range of finishes and designs.
+                </p>
+              </div>
+              <div class="product-item">
+                <img src="assets/tvcab1.jpeg" alt="Furniture" height="180px" width="300px"/>
+                <h3>Custom Furniture</h3>
+                <p>
+                  Unique, one-of-a-kind furniture pieces that blend functionality with artistry. Built to complement any space.
+                </p>
+              </div>
+              <div class="product-item">
+                <img src="assets/babybed1.jpg" alt="Timber Products" height="180px" width="300px"/>
+                <h3>Timber Products</h3>
+                <p>
+                  Premium timber for construction, DIY projects, and more. High-quality, durable wood for all your needs.
+                </p>
+              </div>
+              
+              <!-- Row 2 -->
+              <div class="product-item">
+                <img src="assets/shavings.jpg" alt="Sawdust" height="180px" width="300px"/>
+                <h3>Sawdust & Wood Shavings</h3>
+                <p>
+                  Ideal for animal bedding, gardening, or fuel. Available in various quantities to suit your needs.
+                </p>
+              </div>
+              <div class="product-item">
+                <img src="assets/shoerack1.jpg" alt="Wooden Table" height="180px" width="300px"/>
+                <h3>Wooden Shoeracks</h3>
+                <p>
+                  Crafted from premium hardwood, our wooden shoeracks are designed to add elegance and functionality to your space.
+                </p>
+              </div>
+              <div class="product-item">
+                <img src="assets/sofa4.jpg" alt="Chairs" height="180px" width="300px"/>
+                <h3>Custom Chairs</h3>
+                <p>
+                  Comfortable, durable chairs built to fit any room and style. Available in various materials and finishes.
+                </p>
+              </div>
+            </div>
+          </section>
+          
     </div>
     <div class="container" id="services">
         <h2>Services</h2>
+        <div class="service-list">
         <div class="service">
-        <img src="assets/bed6.jpeg" height="100%" width="100%" alt="services">
+        <img src="assets/bed6.jpeg" style="border-radius: 10px;" height="100%" width="100%" alt="services">
         </div>
-        <div class="service">
-            <p>We also provide various services including timber splitting </p>
-            <p>jhjdhhjhuiehllhmbjbcbnbvjbjhfguihdi</p>
-            <p>nknshijj</p>
+        <div class="service1">
+            <p>We provide high-quality timber products and custom furniture solutions tailored to your needs. Our services include:</p>
+            <ul>
+                <li><strong>Timber cutting & splitting</strong> – Precision-cut timber to your desired sizes.</li>
+                <li><strong>Custom furniture making</strong> – Beautiful, handcrafted furniture built from <br>scratch.</li>
+                <li><strong>Sawdust & wood shavings</strong> – Ideal for animal bedding, gardening, or fuel.</li>
+                <li><strong>Timber sales</strong> – A variety of hardwood and softwood options for construction <br>or carpentry.</li>
+                <li><strong>Furniture repairs & refinishing</strong> – Give your old furniture a fresh new look.</li>
+                <li><strong>Wood planing & smoothing</strong> – Perfect finishes for every project.</li>
+                <li><strong>Delivery services</strong> – We bring your timber and furniture right to your doorstep.</li>
+              </ul>
+        </div>
         </div>
     </div>
 <section>
-    <div class="container" id="contact">
+    <div class="container-contact" id="contact">
         <h2>Contact Us</h2>
-        Contact us for arrangements, customisations and payment methods.
-        <p>Email: ruriifurnitures@gmail.com</p>
-        <p>Phone: +254 740715852</p>
-    </div>
-    <div class="foot">
-        <p>
-            
-        </p>
+        <p><i class="fa fa-envelope" aria-hidden="true"></i> ruriifurnitures@gmail.com</p>
+        <p><i class="fa fa-phone" aria-hidden="true"></i>Phone: +254 740715852</p>
+        <p><i class="fa fa-whatsapp" aria-hidden="true"></i>whatsapp: +254 740715852</p>
+        Contact us for more arrangements, customisations and payment methods.
+
+        </div>
     </div>
 </section>
     <footer>
