@@ -1,174 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rurii Timber Yard & Furniture Store</title>
-  <link rel="website icon" href="">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-    header {
-      background: #4CAF50;
-      color: white;
-      padding: 10px 0;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-    .hero {
-      background: url('timber-background.jpg') no-repeat center center/cover;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 3rem;
-    }
-    .about, .products, .contact {
-      padding: 20px;
-      text-align: center;
-    }
-    .products img {
-      width: 100%;
-      max-width: 300px;
-      margin: 10px;
-    }
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
-    }
-    /* Add this to your existing <style> section */
-.contact form {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  background: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-  color: #333;
-}
-
-.contact input[type="text"],
-.contact input[type="email"],
-.contact textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  transition: border-color 0.3s ease;
-}
-
-.contact input[type="text"]:focus,
-.contact input[type="email"]:focus,
-.contact textarea:focus {
-  border-color: #4CAF50;
-  outline: none;
-}
-
-.contact textarea {
-  resize: vertical;
-  height: 100px;
-}
-
-.contact button {
-  display: block;
-  width: 100%;
-  padding: 12px;
-  background: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.contact button:hover {
-  background: #45a049;
-}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index2.css">
+    <link rel="website icon" href="🪵">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Rurii Timber Yard & Furniture</title>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <h1>Timber Yard & Furniture Store</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#products">Products</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <h1>Quality Timber & Furniture</h1>
-  </section>
-
-  <!-- About Section -->
-  <section class="about" id="about">
-    <h2>About Us</h2>
-    <p>We provide high-quality timber and custom-made furniture for your home or business. With over 20 years of experience, we ensure the best materials and craftsmanship.</p>
-  </section>
-
-  <!-- Products Section -->
-  <section class="products" id="products">
-    <h2>Our Products</h2>
-    <div>
-      <img src="gettyimages-1145174029-170667a.jpg" alt="Timber Product 1">
-      <img src="gettyimages-1145174029-170667a.jpg" alt="Furniture Product 1">
-      <img src="gettyimages-1145174029-170667a.jpg" alt="Furniture Product 2">
+    <header>
+     <!-- <img src="logo.png" class="logoimg"> -->
+       <h1>Rurii Timber Yard & Furniture</h1>
+    </header>
+    <nav class="nav-links" id="navLinks">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+        <div class="slider-container" id="home">
+          <div class="background-slider" id="backgroundSlider">
+            <div class="slide" id="slide1"></div>
+            <div class="slide" id="slide2"></div>
+            <div class="slider-buttons">
+                <button id="prevBtn" onclick="prevSlide()">&#10094;</button>
+                <button id="nextBtn" onclick="nextSlide()">&#10095;</button>
+                <script src="slider.js"></script>
+            </div>
+          </div>
+        <div class="hero-content">
+            <div class="cssanimation leFadeInBottom sequence">
+            <h2 class="leFadeInBottom"><span>Crafting Quality Timber & Furniture</span></h2>
+            <p class="leFadeInBottom"><span>High-quality timber and handcrafted furniture for all your needs.</span></p>
+            <script type="text/javascript" src="cssanimation-gsap.js"></script>
+            </div>
+        </div>
     </div>
-  </section>
+    <div class="about" id="about">
+        <h2>About Us</h2>
+    <section class="about-us">
+        <div class="about-text">
+        <p>
+          Welcome to our timber yard and furniture store — where craftsmanship meets quality. 
+          We specialize in premium timber, custom furniture, and reliable woodworking services designed 
+          to meet the needs of builders, DIYers, and home improvement lovers alike.
+        </p>
+        <p>
+          With years of hands-on experience, we take pride in providing expertly cut timber, unique handcrafted pieces, 
+          and a range of services including timber splitting, sawdust supply, and furniture refinishing.
+        </p>
+        <p>
+          Whether you're looking for raw materials or ready-to-use furniture, our team is here to help you bring your vision to life.
+        </p>
+        </div>
+        <div class="about-image">
+            <img src="assets/bed1.jpeg" alt="About Us Image">
+        </div>
+        </section>
+        <section class="products" id="products">
+          <div class="div" id="container1">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+              <!-- Row 1 -->
+              <div class="product-item">
+                <img src="assets/bed4.jpeg" alt="Custom Bed" height="180px" width="300px"/>
+                <h3>Custom Beds</h3>
+                <p>
+                  Handcrafted for comfort and style, our custom beds are built to fit any bedroom. Choose from a range of finishes and designs.
+                </p>
+              </div>
+              <div class="product-item">
+                <img src="assets/tvcab1.jpeg" alt="Furniture" height="180px" width="300px"/>
+                <h3>Custom Furniture</h3>
+                <p>
+                  Unique, one-of-a-kind furniture pieces that blend functionality with artistry. Built to complement any space.
+                </p>
+              </div>
+              <div class="product-item">
+                <img src="assets/sofa4.jpg" alt="Chairs" height="180px" width="300px"/>
+                <h3>Custom Chairs</h3>
+                <p>
+                  Comfortable, durable chairs built to fit any room and style. Available in various materials and finishes.
+                </p>
+              </div>
 
-<!-- Contact Section -->
-<section class="contact" id="contact">
-  <h2>Contact Us</h2>
-  <form>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+              
+              <!-- Row 2 -->
+              <div class="product-item">
+                <img src="assets/seats.jpg" alt="Sawdust" height="180px" width="300px"/>
+                <h3>Elegant Dining Chairs</h3>
+                <p>
+                  Our dining chairs blend craftsmanship and comfort, made from premium timber to bring warmth, style, and durability to any dining space.
+                </p>
+              </div>
+              <div class="product-item">
+                <img src="assets/shoerack1.jpg" alt="Wooden Table" height="180px" width="300px"/>
+                <h3>Wooden Shoeracks</h3>
+                <p>
+                  Crafted from premium hardwood, our wooden shoeracks are designed to add elegance and functionality to your space.
+                </p>
+              </div>
+              <div class="product-item">
+                <img src="assets/babybed1.jpg" alt="Timber Products" height="180px" width="300px"/>
+                <h3>Timber Products</h3>
+                <p>
+                  Premium timber for construction, DIY projects, and more. High-quality, durable wood for all your needs.
+                </p>
+              </div>
+              <div class="product-item">
+                <img src="assets/shavings.jpg" alt="Sawdust & woodshavings" height="180px" width="300px"/>
+                <h3>Sawdust & Wood Shavings</h3>
+                <p>
+                  Ideal for animal bedding, gardening, or fuel. Available in various quantities to suit your needs.
+                </p>
+              </div>
+              <div class="product-item">
+                <img src="assets/timber.jpg" alt="timber" height="180px" width="300px"/>
+                <h3>Quality Timber</h3>
+                <p>
+                  Our premium timber offers strength, beauty, and versatility—perfect for furniture, construction, or custom projects, ensuring lasting results every time.
+                </p>
+              </div>
+              <div class="product-item">
+                <img src="assets/sofa4.jpg" alt="Chairs" height="180px" width="300px"/>
+                <h3>Custom Chairs</h3>
+                <p>
+                  Comfortable, durable chairs built to fit any room and style. Available in various materials and finishes.
+                </p>
+              </div>
+            </div>
+            </div>
+            <script>
+              function myFunction() {
+                document.getElementById("product-grid").style.overscrollBehavior = "none";
+              }
+              </script>
+          </section>
+          
+    </div>
+    <div class="container" id="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+        <div class="service">
+        <img src="assets/table-saw-cutter-dx-model.jpg" style="border-radius: 10px;" height="100%" width="100%" alt="services">
+        </div>
+        <div class="service1">
+            <p>We provide high-quality timber products and custom furniture solutions tailored to your needs. Our services include:</p>
+            <ul>
+                <li><strong>Timber cutting & splitting</strong> – Precision-cut timber to your desired sizes.</li>
+                <li><strong>Custom furniture making</strong> – Beautiful, handcrafted furniture built from <br>scratch.</li>
+                <li><strong>Sawdust & wood shavings</strong> – Ideal for animal bedding, gardening, or fuel.</li>
+                <li><strong>Timber sales</strong> – A variety of hardwood and softwood options for construction <br>or carpentry.</li>
+                <li><strong>Furniture repairs & refinishing</strong> – Give your old furniture a fresh new look.</li>
+                <li><strong>Wood planing & smoothing</strong> – Perfect finishes for every project.</li>
+                <li><strong>Delivery services</strong> – We bring your timber and furniture right to your doorstep.</li>
+              </ul>
+        </div>
+        </div>
+    </div>
+<section>
+    <div class="container-contact" id="contact">
+        <h2>Contact Us</h2>
+        <p><i class="fa fa-envelope" aria-hidden="true"></i>Email: ruriifurnitures@gmail.com</p>
+        <p><i class="fa fa-phone" aria-hidden="true"></i>Phone: +254 740715852</p>
+        <p><i class="fa fa-whatsapp" aria-hidden="true"></i>whatsapp: +254 740715852</p>
+        Contact us for more arrangements, customisations and payment methods.
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
-
-    <button type="submit">Send Message</button>
-  </form>
-  <p>Address: 123 Timber Lane, Woodville</p>
-  <p>Phone: (123) 456-7890</p>
+        </div>
+    </div>
 </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Rurii Timber Yard & Furniture Store. All rights reserved.</p>
-    <p>
-      <a href="#">Facebook</a> | 
-      <a href="#">Instagram</a> | 
-      <a href="#">Twitter</a>
-    </p>
-  </footer>
+    <footer>
+        <p>&copy; 2025 Timber Yard & Furniture. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>

@@ -23,7 +23,7 @@ const images = [
   
     // Reset after animation
     setTimeout(() => {
-      activeSlide.style.transition = "none";
+      activeSlide.style.transition = "zoom";
       activeSlide.style.transform = "scale(1)";
       activeSlide.style.opacity = "1";
       activeSlide.style.zIndex = 0;
